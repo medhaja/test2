@@ -25,3 +25,14 @@ body {
 .card {
   min-width: 320px;
 }
+footer {
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+
+  padding: 3px;
+  background-color: rgb(4, 2, 136);
+  color: white;
+  
+}
