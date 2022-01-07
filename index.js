@@ -33,12 +33,9 @@ var player = document.getElementById("player");
 
         const img = await webcam.capture();
 
-        // let tensorImg = tf.browser.fromPixels(img).resizeNearestNeighbor([224, 224]).toFloat().expandDims();
 
 
-        const result = await net.predict(img.expandDims())//.print();
-        // result.clone().print();
-        // console.dir(result);
+        const result = await net.predict(img.expandDims())
         // function for geting the largest floating element index from array
         function getIndexOfMax(arr) {
           if (arr.length === 0) {
