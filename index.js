@@ -19,7 +19,7 @@ var player = document.getElementById("player");
       captureButton.addEventListener("click", async function () {
         // Load the model.
         // net = await mobilenet.load();
-        net = await tf.loadLayersModel('https://drive.google.com/file/d/1Nuz90dmox6tfqIwTK5u2HTbqS-K1wkeV/view');
+        net = await tf.loadLayersModel('.//weights//model.json');
         console.log('Model loaded!!');
 
 
