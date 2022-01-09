@@ -21,7 +21,7 @@ var player = document.getElementById("player");
         // net = await mobilenet.load();
         const ASSETS_URL = `${window.location.origin}/assets`
         const WEIGHTS_URL = `${ASSETS_URL}/Weights/model.json`
-        net = await tf.loadLayersModel('https://github.com/medhaja/test2/blob/main/Weights/model.json');
+        net = await tf.loadLayersModel(WEIGHTS_URL);
         console.log('Model loaded!!');
 
 
