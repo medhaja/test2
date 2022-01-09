@@ -19,7 +19,7 @@ var player = document.getElementById("player");
       captureButton.addEventListener("click", async function () {
         // Load the model.
         // net = await mobilenet.load();
-        const ASSETS_URL = `https://github.com/medhaja/test2`
+        const ASSETS_URL = `https://github.com/medhaja/test2/blob/main`
         const WEIGHTS_URL = `${ASSETS_URL}/Weights/model.json`
         net = await tf.loadLayersModel(WEIGHTS_URL);
         console.log('Model loaded!!');
